@@ -1,0 +1,79 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .container {
+  background: url("img/bg.jpg") no-repeat left center/cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+body .container::before {
+  content: '';
+  background: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+body img {
+  width: 8rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: auto;
+}
+
+.play-alain {
+  padding: 8px 15px;
+  border: 0;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+.msg {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+.box {
+  border: 1px solid #dedede;
+  display: inline-block;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
